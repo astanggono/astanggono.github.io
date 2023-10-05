@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Image Recognition</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+                            <a href="index.html" class="logo">
+                                <!-- <span class="symbol"><img src="images/logo.svg" alt="" /></span> -->
+                                <span class="title">Home</span>
+                            </a>
+
+							<!-- Nav -->
+							<nav>
+								<nav id="menu">
+									<h2>Projects</h2>
+									<ul>
+										<li><a href="project1.html">Song Predictor</a></li>
+										<li><a href="project2.html">Image Recognition</a></li>
+										<li><a href="project3.html">Boston Incidents</a></li>
+										<li><a href="project4.html">Experimental Design on Pillow Types</a></li>
+										<li><a href="project5.html">Data Science Consulting Project</a></li>
+										<li><a href="project6.html">ETL Pipeline - Nutrition Search Engine</a></li>
+									</ul>
+								</nav>
+									
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Image Recognition</h1>
+
+							<!-- Image container with two images and captions -->
+							<div class="image-container">
+								<div class="image-with-caption">
+									<img src="images/Sweater - 28 by 28.jpg" alt="A 28x28 image" class="small-image" />
+									<p class="image-caption">A 28x28 image</p>
+								</div>
+								<div class="image-with-caption">
+									<img src="images/Sweater - 7 by 7.jpg" alt="A 7x7 image" class="small-image" />
+									<p class="image-caption">A 7x7 image</p>
+								</div>
+							</div>
+							<style>
+								/* CSS to display images side by side */
+								.image-container {
+									display: flex;
+									justify-content: space-between;
+								}
+								.image-with-caption {
+									text-align: center;
+								}
+								.small-image {
+									max-width: 48%; /* Adjust as needed */
+									height: auto;
+								}
+							</style>
+						
+
+							<h2>Competition Overview (Group Project)</h2>
+							<p>
+								In this group competition, the objective is to collaboratively build machine learning models for image recognition using the MNIST Fashion database, which contains images of different types of apparel. The goal is to predict the category label of these images based on their pixel brightness values. The images are represented as grids of pixels, and the data has been condensed to 49 pixels (7x7) per image for computational tractability. The challenge involves finding the best machine learning models, determining the sample size required for accurate predictions, and optimizing the computational time.
+							</p>
+						
+							<h2>The Data</h2>
+							<ul>
+								<li>The dataset includes grayscale images of apparel, with pixel values ranging from 0 (white) to 255 (black).</li>
+								<li>The data have been condensed from images of 784 (28x28) pixels into 49 pixels (7x7).</li>
+								<li>Two data files are provided: training data and testing data.</li>
+								<li>Variables include the label (category) and pixel_1 to pixel_49, representing grayscale measurements for each pixel.</li>
+							</ul>
+						
+							<h2>The Challenge</h2>
+							<p>
+								Participants, working in groups, must build and evaluate different machine learning models on various sample sizes. The quality of models, their running times, and sample sizes are evaluated using a scoring function: Points = 0.15 * A + 0.1 * B + 0.75 * C. A represents the proportion of training data used, B is a penalty for long-running algorithms, and C is the proportion of incorrectly classified predictions.
+							</p>
+						
+							<h2>Rules</h2>
+							<ul>
+								<li>Participant groups must build 10 different classification models using at least 5 specified techniques, including logistic regression, K-Nearest Neighbors, decision trees, random forests, ridge/lasso/elastic net regression, support vector machines, gradient boosted regression models, and neural networks.</li>
+								<li>Multiple variants of the same algorithm with different parameter settings count as separate models.</li>
+								<li>Participant groups must select three different sample sizes and create three model development sets for each size.</li>
+								<li>Each model is applied to all model development sets, resulting in a total of 90 models.</li>
+							</ul>
+						
+							<h2>Evaluation</h2>
+							<p>
+								Participant groups compute A, B, C, and Points for each model and sample size. Averages are calculated across the three model development sets. The final scoreboard displays average results for 30 combinations of Model and Sample Size, sorted by increasing Points.
+							</p>
+						
+							<p>
+								The group competition challenges participants to work collaboratively to find the best models, optimize sample sizes, and minimize computational time while achieving accurate predictions on the testing data. The Points metric reflects the overall quality of the models developed by the participant groups.
+							</p>
+							<style>
+								.blue-link {
+									color: blue;
+								}
+							</style>
+							
+							<!-- Then in your HTML -->
+							<p><strong><a href="https://github.com/astanggono/image-recognition" target="_blank" class="blue-link">Link to project on GitHub</a></strong></p>
+							
+                            
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="https://github.com/astanggono" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/astaadhiraanggono/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								</ul>
+							</section>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

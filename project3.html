@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Boston Incidents</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+                            <a href="index.html" class="logo">
+                                <!-- <span class="symbol"><img src="images/logo.svg" alt="" /></span> -->
+                                <span class="title">Home</span>
+                            </a>
+
+							<!-- Nav -->
+							<nav>
+								<nav id="menu">
+									<h2>Projects</h2>
+									<ul>
+										<li><a href="project1.html">Song Predictor</a></li>
+										<li><a href="project2.html">Image Recognition</a></li>
+										<li><a href="project3.html">Boston Incidents</a></li>
+										<li><a href="project4.html">Experimental Design on Pillow Types</a></li>
+										<li><a href="project5.html">Data Science Consulting Project</a></li>
+										<li><a href="project6.html">ETL Pipeline - Nutrition Search Engine</a></li>
+									</ul>
+								</nav>
+									
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Boston Incidents</h1>
+							<h2>Summary of Project</h2>
+							<p>
+								This research project focuses on analyzing incident data in the city of Boston, specifically the dataset provided by the Boston Police Department. The dataset includes records of reported incidents from June 15, 2015, to December 31, 2022, and comprises 614,826 rows with 23 columns capturing various incident details. The primary goal of this analysis is to gain insights into incident trends in Boston and their relationship with time, location, and other factors.
+							</p>
+						
+							<h2>Research Questions:</h2>
+							<ul>
+								<li>How does the month of the year, day of the week, and hour of the day affect the incident rate in Boston?</li>
+								<li>Is there a noticeable trend or seasonal change in the number of incidents and shootings over recent years? Are there significant spikes on specific dates, such as holidays or major events?</li>
+								<li>Is there a significant association between the occurrence of shooting incidents and different district locations and specific time ranges?</li>
+								<li>Are there certain types of incidents that tend to co-occur with specific times or locations in Boston?</li>
+							</ul>
+						
+							<h2>Rationale of Techniques & Analytical Procedure</h2>
+							<p>
+								<strong>RQ1:</strong> For the first research question concerning the impact of time factors on incident rates in Boston, we adopted time series analysis. This approach is ideal for investigating patterns and trends over time, particularly in daily and hourly datasets. By converting the data into a time series structure, we can use techniques such as seasonality analysis and forecasting to identify cyclical patterns and make future predictions. Time series analysis allows us to gain a deeper understanding of how incidents vary throughout the day, week, and year.
+							</p>
+							<p>
+								<strong>RQ2:</strong> To address the question of trends and seasonal changes in incident and shooting counts, time series analysis was again employed. This method is well-suited for identifying temporal patterns and trends. We decomposed the time series data into seasonal, trend, and remainder components using the stl() function. Visualizations were created to observe any trends or seasonal variations. Additionally, we used time-series models to predict future incident and shooting distributions based on historical data.
+							</p>
+							<p>
+								For analyzing significant changes on holidays and specific dates, we created a time-series dataframe, which allowed us to compare incident and shooting counts during holidays and normal days. This approach provided a clear visual representation of any spikes or dips in incidents on specific dates.
+							</p>
+							<p>
+								<strong>RQ3:</strong> Logistic regression was selected to examine the association between the occurrence of shooting incidents and different district locations and hour ranges of incidents. Logistic regression is ideal for modeling binary outcomes, making it suitable for this binary classification problem (shooting reported or not reported). By analyzing the coefficients, we determined the strength and direction of the relationship between district locations, hour ranges, and shooting incidents. The significance of these associations was assessed through statistical tests.
+							</p>
+							<p>
+								<strong>RQ4:</strong> For exploring associations between incident types, we employed basket analysis, a technique commonly used in market basket analysis to identify item associations. We adapted it to identify associations between incident types. Basket analysis allowed us to find combinations of incident types that frequently occurred together. Statistical measures like support and confidence were used to quantify these associations.
+							</p>
+							<p>
+								To understand the distribution of incident types across districts, we calculated the frequency of each incident type by district. Visualizations such as heatmaps and bar charts were used to present this information clearly. By filtering out low-frequency incidents, we focused on the most prevalent incident types. We also investigated the top incidents overall and their frequency by district, offering comprehensive insights into incident occurrence patterns.
+							</p>
+							<p>
+								By employing these analytical techniques, we obtained valuable insights into incident patterns, trends, and associations, providing actionable information for law enforcement agencies and policymakers to address public safety in Boston effectively.
+							</p>
+							<style>
+								.blue-link {
+									color: blue;
+								}
+							</style>
+							
+							<!-- Then in your HTML -->
+							<p><strong><a href="https://github.com/astanggono/boston-incidents-analysis" target="_blank" class="blue-link">Link to project on GitHub</a></strong></p>
+							
+
+				
+                            
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="https://github.com/astanggono" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/astaadhiraanggono/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								</ul>
+							</section>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

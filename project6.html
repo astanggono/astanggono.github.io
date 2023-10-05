@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>ETL Pipeline</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+                            <a href="index.html" class="logo">
+                                <!-- <span class="symbol"><img src="images/logo.svg" alt="" /></span> -->
+                                <span class="title">Home</span>
+                            </a>
+
+							<!-- Nav -->
+							<nav>
+								<nav id="menu">
+									<h2>Projects</h2>
+									<ul>
+										<li><a href="project1.html">Song Predictor</a></li>
+										<li><a href="project2.html">Image Recognition</a></li>
+										<li><a href="project3.html">Boston Incidents</a></li>
+										<li><a href="project4.html">Experimental Design on Pillow Types</a></li>
+										<li><a href="project5.html">Data Science Consulting Project</a></li>
+										<li><a href="project6.html">ETL Pipeline - Nutrition Search Engine</a></li>
+									</ul>
+								</nav>
+									
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>ETL Pipeline - Nutrition Search Engine</h1>
+							<h2>Business Use</h2>
+							<p>Nutritional information provided by vitamin and supplement
+								manufacturers is usually stored in separate data sources, making it
+								inconvenient for end users to assess and compare products that are
+								suitable for their needs.
+								Furthermore, end users can typically only find nutrition information
+								on the list of vitamins, ingredients, safety, and risks from the product
+								packaging, which does not provide guidance on which vitamins or
+								supplements to take for certain health deficiencies.
+								In addition, marketplaces like Amazon, Target, and iHerb do not
+								provide a complete list of available products for certain
+								supplements on their site or worldwide.
+								Therefore, we aim to connect these issues by creating a search
+								engine for supplements that can help nutrition-deficient patients
+								find the right products to bolster their needs. Our search engine will
+								prioritize data accuracy and consistency to ensure reliable
+								information.
+								</p>
+
+								<style>
+									ol {
+										list-style-type: none; /* Removes the numbered bullets */
+									}
+								</style>
+								
+								<h2>Data Source</h2>
+								<ol>
+									<li>We are utilizing ‘Dietary Supplement Label Database’ from the National Institutes of Health.</li>
+									<li>Data type: CSV file</li>
+									<li>Number of documents: 156,957</li>
+									<li>Size of the total data: 1.52 GB</li>
+									<li>Number of keys: 29</li>
+								</ol>
+								
+
+							<h2>Implemented Design</h2>
+							<ul>
+								<li>MongoDB: Extracted data from the NIH: 5 different datasets combined
+									</li>
+								<li>elasticsearch: Provides complex indexing and querying to find supplements </li>
+								<li>flask: Web framework that can be used to build web applications</li>
+							</ul>
+							<style>
+								.blue-link {
+									color: blue;
+								}
+							</style>
+							
+							<!-- Then in your HTML -->
+							<p><strong><a href="https://github.com/astanggono/etl-search-engine" target="_blank" class="blue-link">Link to project on GitHub</a></strong></p>
+							
+                            
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="https://github.com/astanggono" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/astaadhiraanggono/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								</ul>
+							</section>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

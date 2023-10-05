@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Song Predictor Rating</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+                            <a href="index.html" class="logo">
+                                <!-- <span class="symbol"><img src="images/logo.svg" alt="" /></span> -->
+                                <span class="title">Home</span>
+                            </a>
+
+							<!-- Nav -->
+                            <nav>
+								<nav id="menu">
+									<h2>Projects</h2>
+									<ul>
+										<li><a href="project1.html">Song Predictor</a></li>
+										<li><a href="project2.html">Image Recognition</a></li>
+										<li><a href="project3.html">Boston Incidents</a></li>
+										<li><a href="project4.html">Experimental Design on Pillow Types</a></li>
+										<li><a href="project5.html">Data Science Consulting Project</a></li>
+										<li><a href="project6.html">ETL Pipeline - Nutrition Search Engine</a></li>
+									</ul>
+								</nav>
+									
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav><!-- Nav -->
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Song Predictor Rating</h1>
+							
+							<p>The R script is an integral part of a project aimed at predicting the popularity ratings of approximately 20,000 popular songs based on their auditory features. The core objective of this project is to develop a robust predictive model that can accurately forecast the popularity ratings of songs using a comprehensive set of song-specific characteristics.</p>
+							<p>The R script leverages several libraries, including tidyr, mice, and dplyr, to facilitate the data analysis and modeling process. Data cleaning and preprocessing are vital steps in preparing the datasets for modeling. Both the analysis and scoring datasets undergo similar data cleaning steps.</p>
+							<p>Firstly, the data is read and loaded into the script. Then, data cleaning commences. Missing values in the datasets are imputed using the mice package with the "cart" method. This helps ensure that the datasets are complete and suitable for analysis.</p>
+                            <p>To handle the 'genre' column, which contains categorical data, a series of data transformations are applied. These transformations involve removing square brackets and single quotation marks, splitting the column into separate rows based on commas, and removing special characters and excess white spaces. Additionally, a new variable, 'track_explicit,' is created as a binary indicator based on the 'track_explicit' column.</p>
+                            <p>For modeling, a random forest regression model (forest_ranger) is employed. This model is chosen due to its capability to handle complex relationships between predictors and the target variable, song ratings. It includes a wide range of predictors, such as 'pop,' 'acousticness,' 'rock,' and various other features that can influence song ratings.</p>
+                            <p>To evaluate the model's performance, Root Mean Squared Error (RMSE) is calculated for both the training and testing datasets. The RMSE serves as a measure of how well the model predicts song ratings.</p>
+                            <style>
+								.blue-link {
+									color: blue;
+								}
+							</style>
+                            <p><strong><a href="https://github.com/astanggono/songratingpredictor" target="_blank" class="blue-link">Link to project on GitHub</a></strong></p>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="https://github.com/astanggono" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/astaadhiraanggono/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								</ul>
+							</section>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
